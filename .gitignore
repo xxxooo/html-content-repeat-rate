@@ -1,0 +1,11 @@
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.vscode
+node_modules
+npm-debug.log
+yarn-error.log
+/dist
+/.idea
+package-lock.json

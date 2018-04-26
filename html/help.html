@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant-TW">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Language" content="zh-TW">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- facebook meta -->
+	<meta name="robots" content="all,noodp,noydir">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    	<meta property="og:site_name" content="104招募管理">
+	<meta property="og:type" content="website">
+	
+    <!--[if lte IE 9]>
+	<script src="https://static.s104.com.tw/104main/vipphp/main/js/vendor/console-polyfill.js"></script>
+    <script src="https://static.s104.com.tw/104main/vipphp/main/js/vendor/es5-shim.min.js"></script>
+    <script src="https://static.s104.com.tw/104main/vipphp/main/js/vendor/json2.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+            document.write('<script src="https://static.s104.com.tw/104main/vipphp/main/js/vendor/polyfill.js"><\/script>');
+			document.write('<script src="https://static.s104.com.tw/104main/vipphp/main/js/vendor/es5.js"><\/script>');
+			document.write('<script src="https://static.s104.com.tw/104main/vipphp/main/js/vendor/es7-shim.js"><\/script>');
+        }
+    </script>
+
+    <script src="https://static.s104.com.tw/104main/vipphp/main/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="https://static.s104.com.tw/104main/vipphp/main/js/vendor/js.cookie.min.js"></script>
+
+    <script src="https://static.s104.com.tw/104main/common/browser.2.0.min.js"></script>
+    <script>
+        //偵測是否為ie8~10 且 今日還未顯示不支援圖層
+        if( Cookies.get('disShowNotSupportJsBeforeLogin') !== '1') {
+            commonBrowser104.init({
+                date: '2018年04月01日',
+                browserVersion: 'IE10',
+                lowest: ['10'],
+                support: ['ie'],
+                fixedHeight: '58px'
+            });
+            var date = new Date();
+            var today = new Date(date.getFullYear(),date.getMonth(),date.getDate(),23,59,59);
+            document.cookie = 'disShowNotSupportJsBeforeLogin = 1; expires = '+ today.toUTCString() + ';path = /';
+        }
+    </script>
+
+    <meta name="description" content="刊登求才廣告、徵才廣告費用、人才查詢方法等常見問題需求。企業徵才、徵人、招募人才，人力銀行第一選擇，提供百萬人才查詢、刊登徵才職缺、接收求職者應徵履歷、專人客服諮詢。" />
+<meta name="keywords" content="常見問題、徵才廣告、人力銀行、104" />
+<meta property="og:title" content="徵才廣告刊登常見問題 | 104招募管理" />
+<meta property="og:description" content="刊登求才廣告、徵才廣告費用、人才查詢方法等常見問題需求。企業徵才、徵人、招募人才，人力銀行第一選擇，提供百萬人才查詢、刊登徵才職缺、接收求職者應徵履歷、專人客服諮詢。" />
+<meta property="og:image" content="https://static.s104.com.tw/104main/vipphp/main/img/quickMsg/fb.png" />
+<meta property="og:url" content="https://pro.104dc-dev.com/vip/preLogin/help" />
+<link rel="stylesheet" type="text/css" href="https://static.s104.com.tw/104main/vipphp/main/preLogin/css/commons.css?v=201804241703" />
+<link rel="stylesheet" type="text/css" href="https://static.s104.com.tw/104main/vipphp/main/preLogin/css/help.css?v=201804241703" />
+<title>徵才廣告刊登常見問題 | 104招募管理</title>
+</head>
+
+<body>
+<script>
+dataLayer = [];
+dataLayer.push({
+	custno: "",
+	loginno: ""
+});
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-55V7QT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-55V7QT');</script>
+<!-- End Google Tag Manager --><!-- 回頁面頂端 -->
+<div class="go-top">
+	<a class="js-go-top" href="javascript:;" title="回頁面頂端" style="display: none;">
+		<img src="https://static.s104.com.tw/104main/vipphp/main/img/icon/top.png" alt="回頁面頂端">
+	</a>
+</div>
+
+<!-- header START -->
+<!--[if lte IE 7]>
+<div style="background:rgb(247,255,178);text-align:center;overflow:hidden;">
+	<p>IE7(含)以下瀏覽器已不支援許多網頁功能，為追求更好的使用體驗，請<a target="_blank" href="http://windows.microsoft.com/zh-tw/internet-explorer/download-ie">升級您的瀏覽器</a></p>
+	<p>我不是IE7(含)以下瀏覽器，但是還出現此訊息，請<a target="_blank" href="http://pro.104dc-dev.com/vip/intro/ieIntro">點此。</a></p>
+</div>
+<![endif]-->
+<div id="sha2_notice_block" class="l-header_sha2" style="background:#fff7be;overflow:hidden;display:none;">
+	<div class="l-header__wrapper l-header__news">
+		<p>為提升更完整的網路安全保護，104集團網站將於6/14使用SSL安全性較高的加密憑證SHA-2版本，我們偵測到您的作業環境不支援此加密憑證，屆時可能導致您無法連線104網站，<a target="_blank" href="http://static.s104.com.tw/104main/vipphp/main/htm/sha2/install.htm">請點此下載安裝SHA-2版本加密憑證。</a></p>
+		<p>若您已依步驟安裝完成，仍出現此公告<a target="_blank" href="http://static.s104.com.tw/104main/vipphp/main/htm/sha2/error_proc.htm">請點此依步驟將畫面寄回招募專員</a>。</p>
+	</div>
+</div>
+<img id='check_ssl_sha2_img' src="/vip/download/testPic" border="0" height="0" width="0" style="display:none;">
+<!-- header END -->
+
+<!-- Module Menu -->
+<!-- Module Menu -->
+<div class="menu" data-isclose="true">
+  <div class="menu-list">
+    <ul class="o-list-inline">
+      <li class="o-list-inline__item menu-item"><a class="menu-link " id="gtm-menu-index" href="/vip/preLogin/index">首頁</a></li>
+      <li class="o-list-inline__item menu-item"><a class="menu-link " id="gtm-menu-search" href="/vip/pre-search">免費人才查詢</a></li>
+      <li class="o-list-inline__item menu-item"><a class="menu-link " id="gtm-menu-features" href="/vip/preLogin/features">產品特色</a></li>
+      <li class="o-list-inline__item menu-item"><a class="menu-link " id="gtm-menu-price" href="/vip/preLogin/program">刊登方案</a></li>
+      <li class="o-list-inline__item menu-item"><a class="menu-link " id="gtm-menu-app-intro" href="/vip/preLogin/appIntro">人才快找APP</a></li>
+              <li class="o-list-inline__item menu-item menu-mobile-login"><a id="gtm-menu-login" class="menu-link" href="/vip/preLogin/login">登入</a></li>
+          </ul>
+    <div class="menu-other">
+      <p class="icon-title">相關連結</p>
+      <span class="icon-link"></span>
+      <a id="gtm-menu-104c" target="_blank" href="https://www.s104.com.tw/?utm_source=VipUnLogin&utm_medium=hamburgerList&utm_campaign=backto104">104人力銀行</a>
+    </div>
+  </div>
+  <div class="menu-mask js-menu-mask"></div>
+</div>
+<!-- Module Header -->
+
+<div class="header">
+  <div class="menu-button js-menu-button" id="gtm-header-menu">
+    <span class="first-line"></span>
+    <span class="second-line"></span>
+    <span class="third-line"></span>
+  </div>
+  <div class="logo">
+    <a href="https://pro.104dc-dev.com/vip/"><img id="gtm-header-logo" src="//static.104.com.tw/logo/104logo_vip_268x88.png" alt="104招募管理"></a>
+  </div>
+      <a href="/vip/preLogin/login" class="button-secondary header-login" id="gtm-header-login">登入</a>
+        <a id="gtm-header-mailin" class="button-primary header-buy" title="留下資料">留下資料</a>
+  </div>
+<!-- Module ModalContact -->
+
+<div class="modal2 modal-contact" id="modal-contact">
+  <div class="modal-content">
+    <span class="modal-close js-close">
+    <i class="icon-close"></i>
+  </span>
+    <div class="modal-header">
+      <input type="hidden" id="vip-url" value="https://pro.104dc-dev.com/vip/quickMsg">
+      <input type="hidden" id="captcha-url" value="https://graphicwb.s104.com.tw/vcode/gencode">
+    </div>
+
+    <div class="modal-body">
+      <div class="info-note js-info-note"></div>
+
+      <div class="title">
+        <h3 class="u-h3" title="馬上留下資料索取優惠">『新客戶7天體驗方案』只要380元<br>馬上留下資料索取優惠</h3>
+      </div>
+
+      <form class="js-contact-form contact-form">
+        <div class="o-layout">
+          <div class="o-layout__item u-1/4 u-1/3@medium">
+            <label class="u-1/3 u-1/3@medium e-label e-require-icon">我想了解</label>
+          </div>
+          <div class="o-layout__item u-2/4 u-1/3@medium">
+            <select class="e-select js-selectItem">
+              <option class="e-option js-201" value="201">請與我聯絡</option>
+              <option class="e-option js-101" value="101">新客7天體驗方案</option>
+              <option class="e-option js-102" value="102">14天刊登方案</option>
+              <option class="e-option js-103" value="103">30天刊登方案</option>
+              <option class="e-option js-104" value="104">60天刊登方案</option>
+              <option class="e-option js-105" value="105">90天刊登方案</option>
+              <option class="e-option js-106" value="106">180天刊登方案</option>
+              <option class="e-option js-107" value="107">365天刊登方案</option>
+              <option class="e-option js-108" value="108">企業形象</option>
+              <option class="e-option js-109" value="109">焦點職缺</option>
+              <option class="e-option js-110" value="110">精選工作</option>
+              <option class="e-option js-111" value="111">自動排序</option>
+            </select>
+            <div class="e-error-message"><i class="icon"></i><span class="js-error-content"></span></div>
+          </div>
+        </div>
+
+        <div class="o-layout">
+          <div class="o-layout__item u-1/4 u-1/3@medium">
+            <label class="e-label e-require-icon">公司統編</label>
+          </div>
+          <div class="o-layout__item u-3/4 u-1/3@medium">
+            <input class="e-input js-ein" name="ein" type="text">
+            <button class="button-secondary js-get-company-name" type="button">帶入公司名稱</button>
+            <label class="e-label">
+              <input class="js-einCheckbox u-checkbox" name="EinCheckbox" type="checkbox">籌備中尚無統編
+            </label>
+            <div class="e-error-message "><i class="icon"></i><span class="js-error-content"></span></div>
+          </div>
+        </div>
+
+        <div class="o-layout">
+          <div class="o-layout__item u-1/4 u-1/3@medium">
+            <label class="e-label e-require-icon">公司名稱</label>
+          </div>
+          <div class="o-layout__item u-3/4 u-1/3@medium">
+            <input class="e-input js-companyName" placeholder="請填寫營利登記名稱" type="text">
+            <div class="e-error-message"><i class="icon"></i><span class="js-error-content"></span></div>
+          </div>
+        </div>
+
+        <div class="o-layout">
+          <div class="o-layout__item u-1/4 u-1/3@medium">
+            <label class="e-label e-require-icon">聯絡人姓名</label>
+          </div>
+          <div class="o-layout__item u-3/4 u-1/3@medium">
+            <input class="e-input js-name" type="text">
+            <div class="e-error-message"><i class="icon"></i><span class="js-error-content"></span></div>
+          </div>
+        </div>
+
+        <div class="o-layout">
+          <div class="o-layout__item u-1/4 u-1/3@medium">
+            <label class="e-label e-require-icon">E-mail</label>
+          </div>
+          <div class="o-layout__item u-3/4 u-1/3@medium">
+            <input class="e-input js-email" type="email">
+            <div class="e-error-message"><i class="icon"></i><span class="js-error-content"></span></div>
+          </div>
+        </div>
+
+        <div class="o-layout">
+          <div class="o-layout__item u-1/4 u-1/3@medium">
+            <label class="e-label e-require-icon">聯絡人電話</label>
+          </div>
+          <div class="o-layout__item u-3/4 u-1/3@medium">
+            <input class="e-input js-tel" type="text" placeholder="請輸入純數字，例：0212341234">
+            <div class="e-error-message"><i class="icon"></i><span class="js-error-content"></span></div>
+          </div>
+        </div>
+
+        <div class="o-layout m-hide">
+          <div class="o-layout__item u-1/4 u-1/3@medium">
+            <label class="e-label e-non-require-icon">聯絡內容</label>
+          </div>
+          <div class="o-layout__item u-3/4 u-1/3@medium">
+            <textarea class="e-textarea js-message u-p" placeholder="請說明您的刊登需求或提供方便聯絡時段，例：下午1:00 ~ 3:00"></textarea>
+            <div class="e-error-message"><i class="icon"></i><span class="js-error-content"></span></div>
+          </div>
+        </div>
+
+        <div class="o-layout m-hide">
+          <div class="o-layout__item u-1/4 u-1/3@medium"></div>
+          <div class="o-layout__item u-3/4 u-1/3@medium">
+            <label class="e-label">104免費提供您人事表單如面談記錄表、試用期滿考核表、人事法規等，留言完成後即可下載，是否下載？</label><br>
+            <label class="e-label"><input class="e-radio-button select-yes" type="radio" name="download" checked="true" value="true"><span></span>是</label>
+            <label class="e-label"><input class="e-radio-button select-no" type="radio" name="download" value="false"><span></span>否</label>
+          </div>
+        </div>
+
+        <div class="o-layout">
+          <div class="o-layout__item u-1/4 u-1/3@medium">
+            <label class="e-label e-require-icon">驗證碼</label>
+          </div>
+          <div class="o-layout__item u-3/4 u-1/3@medium js-captcha">
+            <div class="captcha-box">
+              <input class="e-input js-input-captcha wrapper-input" type="text" maxlength="5" placeholder="不區分大小寫">
+              <div class="wrapper-captcha-image">
+                <img src="" class="captcha-image js-image">
+                <div class="captcha-reflash-button js-reflesh-button" title="重新產生驗證碼"></div>
+                <div class="loading js-loading"></div>
+                <div class="success-icon js-success-icon"></div>
+                <div class="fail-icon js-error-icon"></div>
+              </div>
+              <div class="u-clearfix"></div>
+              <div class="wrapper-captcha-error e-error-message js-error">
+                <i class="icon"></i><span class="text js-error-content"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="o-layout">
+          <div class="o-layout__item u-1/4 u-1/3@medium"></div>
+          <div class="o-layout__item u-3/4 u-1/3@medium">
+            <label class="e-label">
+              <input class="js-infoCheckbox u-checkbox" type="checkbox" >我已詳閱<a href="/vip/preLogin/clause" target="_blank">個資委託告知</a>，瞭解並且同意將個人資料提供予貴公司蒐集、處理與利用
+            </label>
+            <div class="e-error-message"><i class="icon"></i><span class="js-error-content"></span></div>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <button class="button-primary js-submit-button" type="submit">送出留言</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
+
+<!-- Module is VIP user -->
+
+<div id="gtm-msg-oldcust" class="modal modal-is-vip-user js-modal-is-VIPUser">
+  <div class="modal-content">
+    <span class="modal-close js-close-is-vip"></span>
+    <div class="modal-header"></div>
+    <div class="modal-main clear-fix">
+
+      <p class="modal-description" title="已有帳號，請直接登入">
+        統編&nbsp;<span class="js-modal-ein">XXX</span>，已有帳號，請直接登入
+      </p>
+      <div class="wrapper-modal-buttons">
+        <a href="/vip/preLogin/login" class="button-primary modal-button js-close">點此登入</a>
+      </div>
+      <p class="modal-description">
+        或繼續填寫，我們將與您聯絡 <br>
+        已在104刊登過，將不再提供7天380元方案
+      </p>
+      <div class="wrapper-modal-buttons">
+        <button class="button-primary modal-button js-close-is-vip">繼續填寫</button>
+      </div>
+
+    </div>
+    <div class="modal-footer"></div>
+  </div>
+</div>
+<!-- Module Message -->
+
+<div class="modal2 modal-message" id="modalMessage">
+  <div class="modal-content">
+    <span class="modal-close js-close">
+    <i class="icon-close"></i>
+  </span>
+    <div class="modal-header">
+      <div class="js-title">
+        <h3 class="u-h3"></h3>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="js-content"></div>
+    </div>
+    <div class="modal-footer">
+      <div class="modal-buttons">
+        <button class="button-primary modal-button js-confirm">確定</button>
+              </div>
+    </div>
+  </div>
+</div>
+<!-- Module contact success -->
+<div class="modal2 modal-contact-success" id="modal-contact-success">
+  <div class="modal-content">
+    <span class="modal-close js-close">
+    <i class="icon-close"></i>
+  </span>
+    <div class="modal-header">
+    </div>
+
+    <div class="modal-body">
+      <div class="success-section">
+        <h3 class="u-h3" title="留言完成">留言完成</h3>
+        <p class="u-p">您的留言已送出，我們將會儘速與您聯繫</p>
+      </div>
+      <div class="download-tools">
+        <a class="button-secondary" href="https://vip.104.com.tw/download/forms/hr_tool.doc">下載人事工具包</a>
+      </div>
+      <div class="modal-buttons">
+        <button class="button-primary modal-button js-close">確定</button>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="title-wrapper">
+    <h1 class="u-h1">常見問題</h1>
+  </div>
+
+      <section>
+      <div class="section-title">
+        <h3 class="u-h3">刊登問題</h3>
+      </div>
+      <div class="collapsible-wrapper">
+        
+<ul class="collapsible">
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>公司沒有統編，該怎麼填寫刊登資料？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>若您公司正在籌備，已經向經濟部申請預查中，可以先以公司電話暫代統編，等日後再修改即可。</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>我要刊登求才廣告，要填寫什麼樣的文件？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>刊登求才廣告需要您填寫刊登合約書，您可以直接於網頁上點擊留下資料按鈕，填寫資料後將有專員與您聯繫，或是直接<a href="./downloads">下載文件</a>填寫。</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>104有提供英文版的刊登文件嗎？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>104提供英文版的刊登相關文件，您可直接<a href="http://vip.104.com.tw/download/forms/english_for_foreign.doc">下載</a>填寫後回傳。</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>我要如何索取求職者聯絡資訊？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>因個人資料保護法、保護求職者隱私，104求職者資料僅提供104招募管理會員瀏覽，待您完成刊登廣告簽約後，您可透過104招募管理查詢求職者的履歷及聯絡資訊。</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>我已完成刊登資料，但在104首頁還未更新？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>當您填寫完徵才資訊後，104服務專員會主動與您聯繫，與您確認刊登資訊無誤後，立即將您的廣告曝光在104網頁上。
+若您急需服務人員立即處理，您可以撥打服務專線：台北：<a href="tel:0229126104">02-2912-6104</a>、<a href="tel:0277033104">02-7703-3104</a>，中南：<a href="tel:0437006104">04-3700-6104</a>。</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>我曾經刊登過，請問要再刊登的流程為何？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>您可以使用前次刊登期間申請的104招募管理帳號密碼，透過104招募管理的購買功能進行網路續刊，可以快速處理您的廣告上刊時間，若您已忘記104招募管理的帳號密碼，請與我們聯絡：台北：<a href="tel:0229126104">02-2912-6104</a>、<a href="tel:0277033104">02-7703-3104</a>，中南：<a href="tel:0437006104">04-3700-6104</a>。</p>
+      </div>
+    </li>
+  </ul>
+      </div>
+    </section>
+      <section>
+      <div class="section-title">
+        <h3 class="u-h3">費用問題</h3>
+      </div>
+      <div class="collapsible-wrapper">
+        
+<ul class="collapsible">
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>104怎麼收費？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>您可依據您的招募需求選擇適合您的刊登方案，計費方式請參考「<a href="https://pro.104.com.tw/vip/preLogin/program">刊登方案</a>」。</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>104的收費是否划算？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>104擁有600萬以上的求職者，且瀏覽量皆高於同業二倍以上，是全國最大的人力網，當然刊登徵才廣告被看見的平均比率也高於同業，所以費用上是非常合理且划算。</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>我要怎麼付款？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>104目前提供三種付款方式，分別為信用卡付款、ATM轉帳、超商繳款。</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>請問目前有刊登優惠方案嗎？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>104不定期推出優惠方案，想知本月促銷方案請速聯絡招募專員：台北：<a href="tel:0229126104">02-2912-6104</a>、<a href="tel:0277033104">02-7703-3104</a>，中南：<a href="tel:0437006104">04-3700-6104</a>，上海：<a href="tel:+862150277104,1">+86-21-5027-7104轉分機1</a></p>
+      </div>
+    </li>
+  </ul>
+      </div>
+    </section>
+      <section>
+      <div class="section-title">
+        <h3 class="u-h3">104招募管理問題</h3>
+      </div>
+      <div class="collapsible-wrapper">
+        
+<ul class="collapsible">
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>忘記104招募管理帳號密碼，我要怎麼申請？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>若您已忘記登入密碼，請洽貴公司主要人事連絡人。
+若您是主要人事連絡人，需要麻煩您填寫<a href="http://vip.104.com.tw/download/forms/account_apply.doc">104招募管理帳號申請單</a>，填寫完畢請傳真至台北：<a style="color:#009ea6" href="javascript:;">02-2917-5677</a>，中南：<a style="color:#009ea6" href="javascript:;">04-3700-2104</a>。</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>我只要登廣告找人，一定要加入會員嗎？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>當您開始刊登廣告時，104除了提供您專屬服務人員協助您處理徵才時的一切庶務處理外，更提供104招募管理系統，讓您隨時隨地可以修改您的徵人需求與找尋人才，因此，需要請您加入會員來使用您的權利。</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>104招募管理會員是什麼？有什麼服務內容？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>只要您是104的刊登客戶，就可以申請成為104 招募管理會員，您可以直接透過網路管理徵才，104招募管理提供徵才廣告管理、搜尋瀏覽人才、推薦履歷定等多項功能。</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>要如何加入104招募管理會員？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>只要您在104刊登徵才廣告，就可以立刻成為104招募管理會員唷！</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>我要如何查詢104的人才？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>如果您已是104招募管理會員，您只要登入104招募管理，即可透過搜尋功能，尋找適合您的優秀人才。</p>
+      </div>
+    </li>
+  </ul>
+      </div>
+    </section>
+      <section>
+      <div class="section-title">
+        <h3 class="u-h3">其他</h3>
+      </div>
+      <div class="collapsible-wrapper">
+        
+<ul class="collapsible">
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>我要怎麼與104聯絡？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>您可使用<a href="https://pro.104.com.tw/vip/quickMsg/feedback">求才客服信箱</a>與104聯絡或電話聯繫專員台北：<a href="tel:0229126104">02-2912-6104</a>、<a href="tel:0277033104">02-7703-3104</a>，中南：<a href="tel:0437006104">04-3700-6104</a>，上海：<a href="tel:+862150277104,1">+86-21-5027-7104轉分機1</a></p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>我想詢問104其他企業服務</span>
+      </div>
+      <div class="collapsible-body">
+        <p>104提供企業客戶多元招募管道，您可參考<a href="https://www.104.com.tw/biz/index.cfm">人資服務總覽</a>網頁，一次滿足　貴公司不同的招募需求。</p>
+      </div>
+    </li>
+      <li>
+      <i class="collapsible-arrow"></i>
+      <div class="collapsible-header">
+        <i class="icon icon-question"></i>
+        <span>104贈送下載的『人資工具包』是什麼？</span>
+      </div>
+      <div class="collapsible-body">
+        <p>104人力銀行貼心的將常用的人事表格及最新人資法規，整理成人資工具包，協助人資人員處理工作上更為順手，您可直接<a href="https://vip.104.com.tw/download/forms/hr_tool.doc">下載人資工具包</a>。</p>
+      </div>
+    </li>
+  </ul>
+      </div>
+    </section>
+  </div>
+
+<!-- Site Map content -->
+
+<nav class="site-map-section c-bg-gray-800">
+  <div class="o-wrapper">
+    <div class="site-map o-layout">
+      <div class="o-layout__item js-map-list" data-open="0">
+        <h2 class="site-map-type">網路徵才<i class="arrow-icon"></i></h2>
+        <ul class="site-map-list">
+          <li class="site-map-list-item"><a href="https://pro.104dc-dev.com/vip/preLogin/index">大型一般企業｜104人力銀行</a></li>
+          <li class="site-map-list-item"><a href="https://vip.s104.com.tw/ez/main/before/intro/product.cfm">門市餐飲職務｜104簡易刊</a></li>
+          <li class="site-map-list-item"><a href="http://case.104.com.tw/?url=104vipn" target="_blank">專案外包｜104外包網</a></li>
+          <li class="site-map-list-item"><a href="https://tutor.104.com.tw/" target="_blank">家教老師｜104家教網</a></li>
+          <li class="site-map-list-item"><a href="https://www.104china.com/employer" target="_blank">中國刊登｜104中國</a></li>
+          <li class="site-map-list-item"><a href="https://www.jobstreet.com/" target="_blank">協力廠商｜JobStreet.com</a></li>
+          <li class="site-map-list-item"><a href="http://www.the-network.com/" target="_blank">協力廠商｜THE NETWORK</a></li>
+        </ul>
+      </div>
+      <div class="o-layout__item js-map-list" data-open="0">
+        <h2 class="site-map-type">顧問徵才與廣告<i class="arrow-icon"></i></h2>
+        <ul class="site-map-list">
+          <li class="site-map-list-item"><a href="https://hunter.104.com.tw/TC/index.jsp?url=104vipn" target="_blank">中高階獵才｜104獵才顧問中心</a></li>
+          <li class="site-map-list-item"><a href="https://www.104china.com/?url=104vipn" target="_blank">中國高階｜104中國獵才</a></li>
+          <li class="site-map-list-item"><a href="https://www.s104.com.tw/jb/service/ad" target="_blank">廣告行銷｜104廣告中心</a></li>
+        </ul>
+      </div>
+      <div class="o-layout__item js-map-list" data-open="0">
+        <h2 class="site-map-type">人資工具<i class="arrow-icon"></i></h2>
+        <ul class="site-map-list">
+          <li class="site-map-list-item"><a href="https://marketing.pro.104.com.tw/payroll.html?utm_source=B&utm_medium=footer&utm_campaign=blackbar" target="_blank">雲端平台｜企業大師人資管理</a></li>
+          <li class="site-map-list-item"><a href="https://marketing.pro.104.com.tw/salary.html?utm_source=B&utm_medium=footer&utm_campaign=blackbar" target="_blank">雲端平台｜企業大師薪酬調查</a></li>
+          <li class="site-map-list-item"><a href="https://wage.104.com.tw/bhome/index.action" target="_blank">薪資報告｜104求才薪資</a></li>
+          <li class="site-map-list-item"><a href="https://learn.104.com.tw/?url=104vipn" target="_blank">企業訓練｜104教育網</a></li>
+          <li class="site-map-list-item"><a href="https://learn.104.com.tw/104coach.htm?url=104vipn" target="_blank">內訓講師｜104講師中心</a></li>
+          <li class="site-map-list-item"><a href="http://ehr.104.com.tw/Product_ehrms.html?url=104vipn" target="_blank">人資系統｜104薪資假勤系統</a></li>
+          <li class="site-map-list-item"><a href="https://ehrweb.104.com.tw/web/index.jsp?src=vip_footer" target="_blank">招募系統｜104招募管理系統</a></li>
+          <li class="site-map-list-item"><a href="http://ehr.104.com.tw/Product_360.html?url=104vipn" target="_blank">人才發展｜104多角度評鑑</a></li>
+          <li class="site-map-list-item"><a href="http://ehr.104.com.tw/Product_assessment.html?url=104vipn" target="_blank">人才評鑑｜104測評銀行</a></li>
+          <li class="site-map-list-item"><a href="http://ehr.104.com.tw/Product_Course.html?url=104vipn" target="_blank">訓練課程｜104職能發展課程</a></li>
+          <li class="site-map-list-item"><a href="http://ehr.104.com.tw/Product_Cons.html?url=104vipn" target="_blank">顧問諮詢｜104人資顧問服務</a></li>
+        </ul>
+      </div>
+      <div class="o-layout__item site-map-tel">
+        <h2 class="site-map-type">客服專線</h2>
+        <ul class="site-map-list">
+          <li class="site-map-list-item site-map-list-item--tel">週一至週五 09:00~18:00</li>
+          <li class="site-map-list-item site-map-list-item--tel">台北｜<a class="link" href="tel:0229126104">02-2912-6104</a></li>
+          <li class="site-map-list-item site-map-list-item--tel">　　｜<a class="link" href="tel:0277033104">02-7703-3104</a></li>
+          <li class="site-map-list-item site-map-list-item--tel">中南｜<a class="link" href="tel:0437006104">04-3700-6104</a></li>
+          <li class="site-map-list-item site-map-list-item--tel">上海｜<a class="link" href="tel:862150277104">86-21-50277104</a></li>
+        </ul>
+        <div class="site-map-apps">
+          <a href="https://play.google.com/store/apps/details?id=com.m104vip" target="_blank"><img class="site-map-google-play" src="https://static.s104.com.tw/104main/vipphp/main/preLogin/img/app/googleplay.svg" alt="google play"></a>
+          <a href="https://itunes.apple.com/tw/app/104ren-cai-kuai-zhao/id648226656?mt=8" target="_blank"><img class="site-map-app-store" src="https://static.s104.com.tw/104main/vipphp/main/preLogin/img/app/appstore.svg" alt="app store"></a>
+        </div>
+    </div>
+  </div>
+  </div>
+</nav>
+<!-- footer info -->
+
+<footer class="footer-info">
+  <div class="info-part">
+    <p class="info-part-row u-foot">
+      <a href="/vip/preLogin/englishIntro">English</a>  <span class="m-hidden">  |  </span>
+    </p>
+    <p class="info-part-row u-foot">
+      <a href="/vip/preLogin/contract" target="_blank">求才規約</a>  <span class="m-hidden">  |  </span>
+    </p>
+    <p class="info-part-row u-foot">
+      <a href="/vip/preLogin/help" target="_blank">常見問題</a>  <span class="m-hidden">  |  </span>
+    </p>
+    <p class="info-part-row u-foot">
+      <a href="/vip/quickMsg/feedback" target="_blank">求才客服信箱</a>  <span class="m-hidden">  |  </span>
+    </p>
+    <p class="info-part-row u-foot">一零四資訊科技股份有限公司　版權所有 <span class="copyright">©</span> 2018</p>
+  </div>
+</footer>
+<script type="text/javascript" src="https://static.s104.com.tw/104main/vipphp/main/preLogin/js/commons.js?v=201804241703" charset="UTF-8"></script>
+<script type="text/javascript" src="https://static.s104.com.tw/104main/vipphp/main/preLogin/js/help.js?v=201804241703" charset="UTF-8"></script>
+</body>
+</html><script type="text/javascript">
+/*<![CDATA[*/
+if(typeof(console)=='object')
+{
+	console.group("應用程式日誌");
+	console.log("[17:03:52.227][trace][system.CModule] Loading \"log\" application component");
+	console.log("[17:03:52.231][trace][system.CModule] Loading \"request\" application component");
+	console.log("[17:03:52.246][trace][system.CModule] Loading \"urlManager\" application component");
+	console.log("[17:03:52.250][trace][system.CModule] Loading \"clientScript\" application component");
+	console.groupEnd();
+}
+/*]]>*/
+</script>
